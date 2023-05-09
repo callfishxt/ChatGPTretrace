@@ -1,0 +1,447 @@
+@font-face {
+  margin: 1;
+  font-family: "Caviar Dreams";
+  src: url(../src/deffont.ttf);
+}
+
+@font-face {
+  margin: 1;
+  font-family: "Caviar Dreams";
+  src: url(../src/deffont.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  margin: 1;
+  font-family: "Caviar Dreams";
+  src: url(../src/deffont.ttf);
+  font-style: italic;
+}
+
+@font-face {
+  
+  margin: 1;
+  font-family: "Caviar Dreams";
+  src: url(../src/deffont.ttf);
+  font-weight: bold;
+  font-style: italic;
+}
+
+html,
+body {
+  box-sizing: border-box; /* **обнуляем****** */
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font-family: "Caviar Dreams", "Caviar", sans-serif;
+  color: white;
+  background-color: #000000;
+}
+/* **обнуляем****** */
+*,
+*:before,
+*:after {
+box-sizing: inherit;
+}
+img {
+display: block;
+max-width: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+padding: 0;
+margin: 0;
+}
+/* Основные классы */
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+/* Классы для текста нового Oswald*/
+.text-h2 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  font-size: 36px;
+  text-transform: uppercase;
+}
+.text-h3 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+}
+.text-h4 {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 500;
+  font-size: 21px;
+  letter-spacing: 0.02em;
+  /* letter-spacing: ; */
+}
+.text-p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+.text-p-reviews {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+}
+/* *******текст новый Oswald******* */
+p, li, a {
+  font-size: 14pt !important;
+  color: rgb(255, 255, 255);
+}
+
+
+/*доб */
+h1 {
+  font-size: 20pt !important;
+}
+
+/*доб */
+h2 {
+  font-size: 19pt !important;
+}
+
+/*доб */
+h3 {
+  font-size: 18pt !important;
+}
+
+/*доб */
+h4 {
+  font-size: 17pt !important;
+}
+
+/*доб */
+h5 {
+  font-size: 16pt !important;
+}
+
+/*доб */
+h6 {
+  font-size: 15pt !important;
+}
+
+/*доб */
+
+/* < !-- Четыре ссылки состояний:-- >  */
+a:link,
+/* < !-- Обычная, непосещаемая ссылка-- >  */
+a:visited,
+/* < !-- ссылка, которую посетил пользователь -- >  */
+a:hover,
+/* < !-- ссылка, когда пользователь мыши над ним -- > < !-- Ссылка момент щелчка: -- >  */
+a:active {
+  color: rgb(51, 255, 0);
+  text-decoration: none;
+  font-family: "Caviar Dreams";
+  src: url(../src/deffont.ttf);
+  font-weight: normal;
+}
+
+header.header {
+  position: relative;
+  z-index: 5;
+  min-height: 20px;
+  padding: 20px;
+  color: white;
+  background-position: 10px 0, 10px 0, 0 0, 0 0;
+  background-size: 20px 20px;
+  background-color: #007bff;
+  box-shadow: 0 0 5px 0 #333333;
+  height: 100px;
+}
+
+div.logo {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  width: 300px;
+  height: 90px;
+  margin: 0;
+}
+
+/* добавлено*/
+
+.container.flex-end {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.item {
+  line-height: 1;
+  text-align: center;
+  padding: 0.2rem;
+  border: 1px solid white;
+  margin: 1px;
+}
+
+nav.main-menu ul {
+  margin: 0;
+  margin-left: 160px;
+  padding: 0;
+  list-style: none;
+}
+
+.main-menu li {
+  display: inline-block;
+  margin-right: 1em;
+}
+
+.main-menu a {
+  color: white;
+  font-size: 14pt;
+  /* добавлено */
+}
+
+/* Первый экран поцентру новое*/
+.header_os {
+  min-height: 740px;
+  background-image: url(../img/first-screen-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* Текст на первом экране */
+.h1-text {
+  margin: 0 auto 17px;    
+  padding-top: 250px;
+  max-width: 734px;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 95px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+@media screen and (max-width: 380px) {
+  .h1-text {
+    font-size: 46px;
+    line-height: 64px;
+  }
+}
+.h4-text {
+  margin: 0 auto;
+  font-weight: 400;
+  max-width: 734px;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+
+/* Основное содержание */
+main {
+  min-height: 100px;
+  padding-top: 50px;
+  color: whitesmoke;
+  background-color: gray;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAMAAAApB0NrAAAABlBMVEX///+pqalTpKl9AAAAAnRSTlMAGovxNEIAAAAdSURBVDjLY2AAAUaG4UYxDDsfjfp91O+jfqfE7wCzpQCw/dq+qQAAAABJRU5ErkJggg==");
+}
+
+main::after,
+.slides::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+article.blog-entry {
+  min-height: 100px;
+  margin: 0 20px;
+  padding: 10px;
+  background-color: rgba(241, 196, 15, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+  /*доб */
+  box-shadow: 0 0 3px #cccccc;
+}
+
+/* < !-- Псевдоэлемент -- >  */
+.blog-entry::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+section .idea {
+  float: left;
+  width: 90%;
+  min-height: 100px;
+  padding: 3%;
+  background-color: rgba(250, 100, 18, 0.1);
+  border-radius: 5px;
+}
+
+.idea > p {
+  margin: 1em 0;
+  font-size: 0.8em;
+}
+
+.idea > p:last-child {
+  margin: 0;
+}
+
+.idea > h1 {
+  margin: 0;
+  font-size: 0.9em;
+}
+
+aside.video-preview {
+  float: right;
+  width: 46%;
+  margin: 0 0 1em 0.5em;
+  padding: 0.3em 0.3em 0.65em;
+  background-color: gray;
+  /*доб */
+  box-shadow: 0 0 5px 3px rgba(243, 156, 18, 0.2);
+}
+
+/*доб: */
+.video-preview > img {
+  width: 10%;
+}
+
+section.photos {
+  min-height: 50px;
+  margin: 20px 0;
+  background-color: grey;
+  box-shadow: 0 0 5px 3px black;
+  box-shadow: 0 0 5px #cccccc;
+}
+
+figure.slides {
+  margin: 0 20px;
+  padding: 10px;
+}
+
+.slides > img {
+  float: left;
+  margin-right: 16px;
+}
+
+.slides > img:last-child {
+  margin-right: 0;
+}
+
+/* Подвал */
+footer.page-footer {
+  min-height: 50px;
+  padding: 20px;
+  font-size: 14px;
+  color: whitesmoke;
+  background-color: darkblue;
+  background-image:
+      linear-gradient(45deg, transparent 50%, white 50%),
+      linear-gradient(-45deg, transparent 50%, white 50%),
+      linear-gradient(135deg, transparent 50%, #2c3e50 50%),
+      linear-gradient(-135deg, transparent 50%, #2c3e50 50%);
+  background-repeat: repeat-x;
+  background-position: 0 0, 0 0, 0 100%, 0 100%;
+  background-size: 20px 12px;
+}
+
+.page-footer::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.page-footer .info {
+  float: left;
+}
+
+.page-footer .info img {
+  margin-right: 0.5em;
+  vertical-align: middle;
+  border: 2px solid white;
+  box-shadow: 0 0 4px #c0392b;
+  transform: rotate(-5deg);
+}
+
+.page-footer .copyright {
+  float: right;
+  padding-top: 20px;
+  font-size: 12px;
+}
+
+div.librarie {
+  min-height: 50px;
+  margin: 20px 0;
+}
+/* Наши проекты */
+/* Переменные с цветами */
+:root {
+  --accent-color: #f7654a;
+  --dark-color: #404149;
+  --gray-color: #999999;
+  --white-color: #ffffff;
+  --background-color: #e5e5e5;
+}
+.project-h2 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.about__flex {
+  display: flex;
+}
+.about__flex-item {
+  max-width: 350px;
+  margin-right: 30px;
+}
+.about__flex-item:last-child {
+  margin-right: 0;
+}
+.project-img {
+  margin-bottom: 45px;
+}
+.rectangle {
+  width: 55px;
+  height: 6px;
+  background-color: var(--accent-color);
+  margin-bottom: 15px;
+}
+.project-h3 {
+  color: var(--dark-color);
+  margin-bottom: 13px;
+}
+.project-p {
+  color: var(--gray-color);
+}
+button{
+  margin: 5px;
+  background-color: black;
+  border-color: white;
+  text-decoration: none;
+  
+}
+@media screen and (max-width: 1280px) {
+  .about {
+    padding: 450px 15px 110px 15px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about {
+    padding-top: 150px;
+    padding-bottom: 80px;
+  }
+  .about__flex {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about__flex-item {
+    margin-right: 0px;
+    margin-bottom: 30px;
+  }
+  .about__flex-item:last-child {
+    margin-bottom: 0;
+  }
+}
